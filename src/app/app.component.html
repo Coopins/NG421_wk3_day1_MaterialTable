@@ -1,6 +1,6 @@
 <h1> Batman Metal</h1>
 <mat-form-field>
-    <input matInput placeholder="filter" type="text">
+    <input matInput placeholder="filter" type="text" (keyup)="applyFilter($event.target.value)">
 </mat-form-field>
 <table mat-table [dataSource]="datsSource" matSort class="mat-elevation-z8" width="75%">
 
